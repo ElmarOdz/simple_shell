@@ -89,6 +89,7 @@ typedef struct r_var_list
  * @name: The name of the command builtin i.e cd, exit, env
  * @f: data type pointer function.
  */
+
 typedef struct builtin_s
 {
 	char *name;
