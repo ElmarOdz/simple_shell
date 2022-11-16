@@ -8,6 +8,7 @@
  *
  * Return: new env or alias.
  */
+
 char *copy_info(char *name, char *value)
 {
 	char *new;
@@ -33,6 +34,7 @@ char *copy_info(char *name, char *value)
  * @datash: data structure (environ)
  * Return: no return
  */
+
 void set_env(char *name, char *value, data_shell *datash)
 {
 	int i;
@@ -64,6 +66,7 @@ void set_env(char *name, char *value, data_shell *datash)
  *
  * Return: 1 on success.
  */
+
 int _setenv(data_shell *datash)
 {
 
@@ -85,6 +88,7 @@ int _setenv(data_shell *datash)
  *
  * Return: 1 on success.
  */
+
 int _unsetenv(data_shell *datash)
 {
 	char **realloc_environ;
