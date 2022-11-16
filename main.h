@@ -19,7 +19,6 @@
 /* Points to an array of pointers to strings called the "environment" */
 extern char **environ;
 
-
 /**
  * struct data - struct that contains all relevant data on runtime
  * @av: argument vector
@@ -30,6 +29,7 @@ extern char **environ;
  * @_environ: environment variable
  * @pid: process ID of the shell
  */
+
 typedef struct data
 {
 	char **av;
@@ -47,6 +47,7 @@ typedef struct data
  * @next: next node
  * Description: single linked list to store separators
  */
+
 typedef struct sep_list_s
 {
 	char separator;
@@ -59,6 +60,7 @@ typedef struct sep_list_s
  * @next: next node
  * Description: single linked list to store command lines
  */
+
 typedef struct line_list_s
 {
 	char *line;
@@ -73,6 +75,7 @@ typedef struct line_list_s
  * @next: next node
  * Description: single linked list to store variables
  */
+
 typedef struct r_var_list
 {
 	int len_var;
